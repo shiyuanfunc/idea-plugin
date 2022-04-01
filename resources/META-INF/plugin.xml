@@ -1,0 +1,39 @@
+<idea-plugin>
+  <id>com.shiyuanfunc.idea.plugins</id>
+  <name>First-plugins</name>
+  <version>1.0</version>
+  <vendor email="shiyuanfunc@gmail.com" url="http://www.baidu.com">BaiDu</vendor>
+
+  <description><![CDATA[
+      slef desc <br>
+      <em>Hello Word</em>
+      don't say anythingd
+      阿达大厦大厦大厦 大声点阿三的阿斯顿阿三的阿三大是的阿三的阿三的阿三大傻的阿三的阿 大傻的阿三的阿斯顿阿三的阿三的阿三大是的阿三
+    ]]></description>
+
+  <change-notes><![CDATA[
+     nothing
+    ]]>
+  </change-notes>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/build-number-ranges.html for description -->
+  <idea-version since-build="173.0"/>
+
+  <!-- please see https://plugins.jetbrains.com/docs/intellij/plugin-compatibility.html
+       on how to target different products -->
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="ConsoleLog" class="com.shiyunfunc.plugins.ConsologAction" text="ConsologLog"
+            description="this is a console">
+      <add-to-group group-id="ConsoleView.PopupMenu" anchor="first"/>
+    </action>
+  </actions>
+
+</idea-plugin>
